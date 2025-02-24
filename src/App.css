@@ -1,0 +1,103 @@
+/* App.css */
+
+/* General Styles for Improved Readability and Consistency */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7; /* Slightly increased line-height */
+}
+
+#root {
+  max-width: 1200px; /* Increased maximum width */
+  margin: 3rem auto; /* Increased margin */
+  padding: 3rem; /* Increased padding */
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  border-radius: 12px; /* Increased border radius */
+}
+
+/* User List Specific Styles */
+.user-list-container {
+  margin-top: 4rem; /* Increased top margin */
+}
+
+.user-list-header {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: 600;
+  margin-bottom: 2rem; /* Increased margin */
+  color: #343a40;
+  border-bottom: 2px solid #dee2e6; /* Thicker border */
+  padding-bottom: 0.75rem;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 1.1rem; /* Slightly larger font */
+  margin-top: 1.5rem; /* Increased margin */
+  background-color: #f8d7da;
+  padding: 1.25rem; /* Increased padding */
+  border-radius: 6px; /* Increased border radius */
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  font-size: 1.25rem; /* Increased font size */
+  margin: 1rem 0; /* Increased margin */
+  padding: 1.25rem; /* Increased padding */
+  background-color: #f8f9fa;
+  border-radius: 6px; /* Increased border radius */
+  border: 1px solid #dee2e6;
+}
+
+.no-users-message {
+  font-size: 1.1rem; /* Increased font size */
+  color: #6c757d;
+  text-align: center;
+  padding: 1.25rem; /* Increased padding */
+  background-color: #e9ecef;
+  border-radius: 6px; /* Increased border radius */
+  margin-top: 1.5rem; /* Increased margin */
+}
+
+/* Optional: Add Hover Effects for Interactivity */
+.user-item:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08); /* Slightly stronger hover shadow */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Responsive adjustments if needed, example for smaller screens*/
+@media (max-width: 1024px) { /*Adjust for tablet size screens*/
+  #root {
+    max-width: 95%;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+  .user-list-header{
+      font-size: 2rem;
+  }
+  .user-item{
+      font-size: 1.1rem;
+      padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  .user-list-header{
+      font-size: 1.7rem;
+  }
+  .user-item{
+      font-size: 1rem;
+      padding: 0.75rem;
+  }
+}
